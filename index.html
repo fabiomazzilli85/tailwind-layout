@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina con Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-amber-100 text-gray-900">
+    <header class="bg-orange-300 p-4 text-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <h1 class="hidden text-2xl md:block text-red-600 font-semibold">Soluzione Informatica</h1>
+        <img src="code.png" alt="logo" width="40px" class="md:hidden ml-3">
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="uppercase hover:text-stone-700 md:lowercase">Home</a></li>
+            <li><a href="#about" class="uppercase hover:text-stone-700 md:lowercase">Chi Siamo</a></li>
+            <li><a href="#services" class="uppercase hover:text-stone-700 md:lowercase">Servizi</a></li>
+            <li><a href="#contact" class="uppercase hover:text-stone-700 md:lowercase">Contatti</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container mx-auto mt-8 p-4">
+      <section id="home" class="mb-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="rounded-full bg-white p-6 shadow lg:rounded border-2 border-orange-200">
+            <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Benvenuti</h2>
+            <p class="ml-3 text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nostrum?</p>
+          </div>
+          <div class="rounded-full bg-white p-6 shadow lg:rounded border-2 border-orange-200">
+            <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Assistenza</h2>
+            <p class="ml-3 text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, culpa?</p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="mb-8">
+        <div class="rounded-full bg-white p-6 shadow md:rounded border-2 border-orange-200">
+          <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Chi Siamo</h2>
+          <p class="ml-3 text-center lg:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt!</p>
+        </div>
+      </section>
+      <section id="services" class="mb-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div class="rounded bg-white p-6 shadow border-2 border-orange-200">
+            <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Servizio PEC</h2>
+            <p class="ml-3 text-center lg:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, enim!</p>
+          </div>
+          <div class="rounded bg-white p-6 shadow border-2 border-orange-200">
+            <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Servizio Mail</h2>
+            <p class="ml-3 text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, qui.</p>
+          </div>
+          <div class="rounded bg-white p-6 shadow border-2 border-orange-200">
+            <h2 class="mb-2 ml-3 text-center text-xl font-bold text-green-500 lg:text-left">Servizio Cloud Storage</h2>
+            <p class="ml-3 text-center lg:text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, dolorum!</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="mb-8">
+        <div class="rounded bg-white p-6 shadow border-2 border-rose-600">
+          <h2 class="mb-2 text-xl font-bold text-green-500">Contatti</h2>
+          <form action="#" method="post" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium">Nome:</label>
+              <input type="text" id="name" name="name" class="mt-1 block w-full rounded border border-gray-300 p-2" required />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email:</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full rounded border border-gray-300 p-2" required />
+            </div>
+            <div>
+              <input type="submit" value="Invia" class="rounded bg-cyan-500 px-4 py-2 text-white hover:bg-cyan-700" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-orange-300 p-4 text-white">
+      <div class="container mx-auto text-center">
+        <p class="text-red-600">&copy; 2024 Fabio Mazzilli | info@fabiomazzilli.com | fabiomazzilli.it</p>
+      </div>
+    </footer>
+  </body>
+</html>
